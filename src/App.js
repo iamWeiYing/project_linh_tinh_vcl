@@ -127,6 +127,60 @@ const App = () => {
             onChange={handleChange}
           />
         </div>
+
+        <div className="mb-4">
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            htmlFor="select"
+          >
+            Select
+          </label>
+          <div>
+            <select className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+              <option value="option4">Option 4</option>
+            </select>
+          </div>
+        </div>
+
+        <div className="mb-4">
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            htmlFor="radio"
+          >
+            Radio Button
+          </label>
+          <label className="mr-5">
+            <input
+              className="mr-2"
+              type="radio"
+              name="myRadio"
+              value="option1"
+            />
+            Option 1
+          </label>
+          <label className="mr-5">
+            <input
+              className="mr-2"
+              type="radio"
+              name="myRadio"
+              value="option2"
+            />
+            Option 2
+          </label>
+          <label className="mr-5">
+            <input
+              className="mr-2"
+              type="radio"
+              name="myRadio"
+              value="option3"
+            />
+            Option 3
+          </label>
+        </div>
+
         <div className="mb-4">
           <label
             className="block text-gray-700 text-sm font-bold mb-2"
@@ -155,7 +209,10 @@ const App = () => {
           />
         </div>
         <div className="mb-6">
-          <a href="#" className="text-blue-500 hover:underline">
+          <a
+            href="https://www.facebook.com"
+            className="text-blue-500 hover:underline"
+          >
             Link
           </a>
         </div>
