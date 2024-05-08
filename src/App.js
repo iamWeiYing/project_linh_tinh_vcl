@@ -122,7 +122,7 @@ const App = () => {
           <input
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             id="datepicker"
-            type="date-local"
+            type="datepicker-local"
             name="selectedDate"
             value={formData.selectedDate}
             onChange={handleChange}
@@ -138,7 +138,7 @@ const App = () => {
           <input
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             id="timepicker"
-            type="time-local"
+            type="timepicker-local"
             name="selectedTime"
             value={formData.selectedTime}
             onChange={handleChange}
