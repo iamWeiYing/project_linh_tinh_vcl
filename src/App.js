@@ -122,7 +122,7 @@ const App = () => {
           <input
             datepicker
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            // id="date-picker"
+            id="date-picker"
             type="date"
             name="selectedDate"
             value={formData.selectedDate}
@@ -140,7 +140,7 @@ const App = () => {
           <input
             datepicker
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            // id="date-picker"
+            id="date-picker"
             type="time"
             name="selectedTime"
             value={formData.selectedTime}
