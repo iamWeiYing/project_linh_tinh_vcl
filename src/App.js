@@ -9,6 +9,7 @@ const App = () => {
     message: "",
     checkbox: false,
     selectedDate: "",
+    selectedTime: "",
     color: "#000000",
     file: null,
   });
@@ -119,11 +120,30 @@ const App = () => {
             Date Picker
           </label>
           <input
+            datepicker
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="datepicker"
-            type="datetime-local"
+            // id="date-picker"
+            type="date"
             name="selectedDate"
             value={formData.selectedDate}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div className="mb-4">
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            htmlFor="datepicker"
+          >
+            Time Picker
+          </label>
+          <input
+            datepicker
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            // id="date-picker"
+            type="time"
+            name="selectedTime"
+            value={formData.selectedTime}
             onChange={handleChange}
           />
         </div>
